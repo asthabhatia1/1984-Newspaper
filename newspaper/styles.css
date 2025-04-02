@@ -1,0 +1,293 @@
+/* Base styles */
+@font-face {
+  font-family: "Old English Text MT";
+  src: local("Old English Text MT"), local("OldEnglishTextMT");
+  /* Fallback to similar fonts if Old English Text MT is not available */
+  font-family: "Blackletter", "Gothic", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", serif;
+  background-color: #fff; /* Keep the main background white */
+}
+
+/* Main container */
+.newspaper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically (if needed) */
+  width: 329px;
+  margin: 0 auto; /* Ensures horizontal centering */
+  min-height: 100vh; /* Ensures vertical centering */
+  background-color: white;
+  padding: 1rem;
+}
+
+
+/* Newspaper main section */
+.newspaper-main {
+  position: relative;
+  background-image: url('background.jpg'); /* Set background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+/* Header styles */
+.newspaper-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.ministry-title {
+  font-size: 20px;
+  font-family: Inter, Arial, sans-serif;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.newspaper-subtitle {
+  font-size: 7px;
+  font-family: Inika, serif;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.newspaper-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.newspaper-title-prefix,
+.newspaper-title-suffix {
+  font-size: 32px;
+  font-family: "Old English Text MT", "Blackletter", "Gothic", serif;
+}
+
+.newspaper-logo {
+  width: 44px;
+  height: 40px;
+}
+
+.newspaper-date {
+  font-size: 7px;
+  font-family: Inika, serif;
+  text-align: right;
+  margin: 0;
+}
+
+.newspaper-shorthand {
+  font-size: 20px;
+  font-family: Inter, Arial, sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+.subtitle-divider {
+  width: 100%;
+  height: 1px; /* Adjust thickness */
+  background-color: black; /* Adjust color */
+  border: none;
+  margin: 0; /* Adjust spacing */
+}
+
+/* Articles grid layout */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.bottom-articles {
+  margin-top: 1rem;
+}
+
+/* Article styles */
+.article-headline {
+  font-size: 12px;
+  font-family: "Times New Roman", serif;
+  font-weight: 550;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+.article-link {
+  text-decoration: none;
+  color: black;
+}
+
+.article-link:hover {
+  color: rgb(27, 27, 27);
+  text-decoration: underline;
+}
+
+.article-content {
+  font-size: 5px;
+  font-family: "Yaldevi Colombo Medium", "Yaldevi Colombo", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+.article-container {
+  background-image: url('background.jpg'); /* Same background */
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically (if needed) */
+  width: 329px;
+  margin: 0 auto; /* Ensures horizontal centering */
+  min-height: 100vh; /* Ensures vertical centering */
+  
+  
+}
+
+.article-header {
+  text-align: center;
+  font-size: 12px;
+}
+
+.article-content-section {
+  font-size: 12px;
+  font-family: "Times New Roman", serif;
+  margin: 0.25rem;
+}
+
+.article-footer {
+  text-align: center;
+  margin-top: 0rem;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.responsive-video {
+  max-width: 100%; /* Ensures it doesn’t overflow */
+  width: 300px; /* Adjust size */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Crossword section */
+.crossword-section {
+  position: relative;
+  background-image: url('background.jpg'); /* Set background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #000;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.crossword-title {
+  font-size: 15px;
+  font-family: Judson, serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.crossword-image {
+  width: 206px;
+  height: 138px;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.crossword-clues {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.clues-text {
+  font-size: 7px;
+  font-family: "Tiro Bangla", serif;
+  margin: 0;
+}
+
+.crossword-answers {
+  font-size: 5px;
+  font-family: "Yaldevi Colombo Medium", "Yaldevi Colombo", sans-serif;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.crossword-grid {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.crossword-grid td {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+ 
+  border: 1px solid black;
+}
+
+.filled-cell {
+  background-image: url('puzzle.jpg');
+}
+
+.empty-cell {
+  background-image: 'background.jpg';
+}
+const style = document.createElement("style");
+style.textContent = `
+  .crossword-grid {
+    border-collapse: collapse;
+  }
+  .crossword-grid td {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    background-image: 'background.jpg'; /* Light golden color for filled cells */
+    border: 1px solid black; /* Default border */
+  }
+  
+  .crossword-grid td input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+  }
+  
+  /* Hide unfilled cells */
+  .crossword-grid td.empty {
+    background-color: transparent; /* Make empty cells blend with the background */
+    border: none; /* Remove the grid around them */
+    pointer-events: none; /* Prevent interaction */
+  }
+  
+  .crossword-input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 7px;
+    border: none;
+    outline: none;
+  }
+`;
+document.head.appendChild(style);
+}
+
+
+);
